@@ -12,7 +12,6 @@ public:
                 cnt++;
             }
         }
-
         return cnt == 1;
     }
 };
