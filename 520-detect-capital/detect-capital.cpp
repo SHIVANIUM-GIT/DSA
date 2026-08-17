@@ -11,19 +11,7 @@ public:
                 ++count;
             }
         }
-        if(count == 1 && isupper(word[0]))
-        {
-            return true;
-        }
-        else if(count == 0)
-        {
-            return true;
-        }
-        else if( count == n)
-        {
-            return true;
-        }
-
-        return false;
+        
+        return count == 0 || count == n ||  (count == 1 && isupper(word[0]));
     }
 };
